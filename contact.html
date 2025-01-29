@@ -1,34 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - OrthoCare Center</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Us - OrthoCare Center</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="index.html" class="logo">OrthoCare Center</a>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="contact">
-                <h1>Contact Us</h1>
-                <p>Email: support@orthocarecenter.com</p>
-                <p>Phone: +123 456 7890</p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 OrthoCare Center. All Rights Reserved.</p>
-        </footer>
-    </body>
-    </html>
-    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>📞 Get in Touch with OrthoCare Center</h1>
+            <p>Your health is our priority. Reach out to us for expert orthopedic care.</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">OrthoCare Center</a>
+        <ul class="nav-links">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="services.html">🩺 Services</a></li>
+            <li><a href="contact.html" class="active">📞 Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <main class="contact-section">
+        <div class="contact-info">
+            <h2>📩 Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:support@orthocarecenter.com">support@orthocarecenter.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (123) 456-7890</a></p>
+            <p><strong>Address:</strong> 123 OrthoCare Street, New York, NY 10001</p>
+            <p><strong>Business Hours:</strong> Monday - Friday: 9 AM - 6 PM</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>✉️ Send Us a Message</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" value="John Doe" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" value="johndoe@example.com" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required>Hi, I’d like to schedule an appointment for a consultation. Please let me know your availability.</textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Google Map -->
+    <section class="map-section">
+        <h2>📍 Find Us Here</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.882918137093!2d-74.006015!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a317f3b4e39%3A0xa6474f3b9c50a5!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000"
+            width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 OrthoCare Center. All Rights Reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
